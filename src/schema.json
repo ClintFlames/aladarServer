@@ -1,0 +1,14 @@
+{
+	"type": "object",
+	"allowTrailingCommas": true,
+	"properties": {
+		"colorList": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"format": "color-hex",
+				"defaultSnippets": [{ "body": "${1:#ff0000}" }]
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"name": "aladarserver",
+	"version": "1.0.0-alpha",
+	"description": "Server for aladar userscript.",
+	"main": "build/src/index.js",
+	"scripts": {
+		"tsserver": "tsc -w -p .",
+		"build": "tsc -p .",
+		"freshbuild": "rm -r ./build/ && tsc -p .",
+		"test": "clear && tsc -p . && node ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ClintFlames/aladarServer.git"
+	},
+	"keywords": [
+		"aladar",
+		"diep",
+		"io",
+		"ally",
+		"radar",
+		"userscript"
+	],
+	"author": "ClintFlames",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ClintFlames/aladarServer/issues"
+	},
+	"homepage": "https://github.com/ClintFlames/aladarServer#readme",
+	"devDependencies": {
+		"@types/node": "^20.4.1",
+		"@types/ws": "^8.5.5",
+		"typescript": "^5.1.6"
+	},
+	"dependencies": {
+		"ws": "8.13.0"
+	}
+}
