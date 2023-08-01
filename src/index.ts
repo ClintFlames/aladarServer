@@ -52,9 +52,8 @@ if (config.playerLimit > 15 && config.colorMode == "palette") {
 	config.playerLimit = 15;
 }
 
-if (config.joinCode == "env") {
-	config.joinCode = readFileSync(path.join(__dirname, "../../.env"), "utf8");
-}
+if (config.joinCode == "env") 
+	config.joinCode = readFileSync(path.join(__dirname, "../../.env"), "utf8").slice(5);
 if (config.joinCode.length < 8)
 	throw new Error("\"joinCode\" must have atleast 8 symbols.");
 if (!/^[a-zA-Z0-9]+$/.test(config.joinCode))
@@ -67,6 +66,8 @@ if (!Number.isInteger(config.ticksPerSecond))
 	throw new Error("\"ticksPerSecond\" is not valid.");
 if (config.ticksPerSecond > 8)
 	console.log(`WARNING: "ticksPerSecond" set to ${config.ticksPerSecond}, so players with ping ${Math.floor(1000 / config.ticksPerSecond)} or above will be disconnected.`);
+
+if (config.webSocketPort == 0) config.webSocketPort = parseInt(process.env.PORT || "5001");
 
 
 

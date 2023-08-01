@@ -8,7 +8,7 @@ export const config:IConfig = {
 	 */
 	colorMode: "palette",
 	/** If player limit is more than 15 and colorMode is `palette` limit will be 15. */
-	playerLimit: 50,
+	playerLimit: 15,
 	/**
 	 * Used to prevent unknown players from joining.
 	 * Can only contain characters a-z A-Z 0-9

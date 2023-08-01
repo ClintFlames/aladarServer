@@ -15,8 +15,8 @@ English guide is ([here](./Guide.md)).
 2. Перейдите на [страницу проекта](https://glitch.com/edit/#!/aladarserver).
 3. Нажмите на кнопку <image alt="Remix" src="./glitch_remix.png" align="center" height="40rem">
 4. Выберите файл `config.ts` и установите `joinCode` значение `"env"`, а `webSocketPort` значение `0`.
-5. Откройте файл `.env` и нажмите на кнопку <image alt="PLAINTEXT" src="./glitch_plaintext.png" align="center" height="40rem">
-6. Сотрите содержимое файла и придумайте секретный код для подключения.
+5. Откройте файл `.env`.
+6. Запишите секректный код в поле для значения `CODE`.
 7. Нажмите на кнопку <image alt="Terminal" src="./glitch_terminal.png" align="center" height="40rem">
 8. Напишите `refresh` и нажмите `Enter`.
 <br>

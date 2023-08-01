@@ -7,7 +7,8 @@
 		"tsserver": "tsc -w -p .",
 		"build": "tsc -p .",
 		"freshbuild": "rm -r ./build/ && tsc -p .",
-		"test": "clear && tsc -p . && node ."
+		"test": "clear && tsc -p . && node .",
+		"start": "npm run test"
 	},
 	"repository": {
 		"type": "git",
