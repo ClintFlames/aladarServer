@@ -9,10 +9,15 @@ export interface IConfig {
 	playerLimit: number,
 	/**
 	 * Used to prevent unknown players from joining.
+	 * If "env", joinCode will be taken from .env file.
 	 * Can only contain characters a-z A-Z 0-9
 	 */
 	joinCode: string,
-	/** Port on which the websocket server will be launched. */
+	/**
+	 * Port on which the websocket server will be launched.
+	 * Note: If 0 specified, process.env.PORT will be used.
+	 * P.S. Place 0 if you using glitch.com.
+	 */
 	webSocketPort: number,
 	/**
 	 * Higher value reduces latency, but also reduces maximum available players ping value.

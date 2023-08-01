@@ -3,6 +3,8 @@ import { colorList as softColorList } from "./softColorList.json";
 import { IWebSocket } from "./types/IWebSocket";
 import { IPlayer } from "./types/IPlayer";
 import { Server as WSServer } from "ws";
+import { readFileSync } from "fs";
+import path from "path";
 
 //* FUNCTIONS AND VARIABLES
 const rnd = (a:number, b?:number) => Math.floor(Math.random() * (b ? b - a : a ?? 2)) + (b ? a : 0);
@@ -50,6 +52,9 @@ if (config.playerLimit > 15 && config.colorMode == "palette") {
 	config.playerLimit = 15;
 }
 
+if (config.joinCode == "env") {
+	config.joinCode = readFileSync(path.join(__dirname, "../../.env"), "utf8");
+}
 if (config.joinCode.length < 8)
 	throw new Error("\"joinCode\" must have atleast 8 symbols.");
 if (!/^[a-zA-Z0-9]+$/.test(config.joinCode))

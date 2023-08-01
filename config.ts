@@ -12,9 +12,15 @@ export const config:IConfig = {
 	/**
 	 * Used to prevent unknown players from joining.
 	 * Can only contain characters a-z A-Z 0-9
+	 * Note: If "env", joinCode will be taken from .env file.
+	 * P.S. Place "env" and write joinCode in .env file instead if you using glitch.com.
 	 */
 	joinCode: "CodeForJoiningToServer",
-	/** Port on which the websocket server will be launched. */
+	/**
+	 * Port on which the websocket server will be launched.
+	 * Note: If 0 specified, process.env.PORT will be used.
+	 * P.S. Place 0 if you using glitch.com.
+	 */
 	webSocketPort: 5001,
 	/**
 	 * Higher value reduces latency, but also reduces maximum available players ping value.
