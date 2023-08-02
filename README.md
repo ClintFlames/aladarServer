@@ -3,4 +3,4 @@ AladarServer provides communication between [aladar](https://github.com/ClintFla
 
 <br>
 
-### [English Guide](./docs/Guide.md)/[Гайд на руссокм](./docs/Guide_ru.md).
+### [English Guide](./docs/Guide.md)/[Гайд на русском](./docs/Guide_ru.md).
