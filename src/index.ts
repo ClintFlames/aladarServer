@@ -53,7 +53,9 @@ if (config.playerLimit > 15 && config.colorMode == "palette") {
 }
 
 if (config.joinCode == "env") 
-	config.joinCode = readFileSync(path.join(__dirname, "../../.env"), "utf8").slice(5).split("\n")[0];
+	config.joinCode = readFileSync(path.join(__dirname, "../../.env"), "utf8")
+	.split("\n")
+	.find(v => v.startsWith("CODE="))?.slice(5) || "";
 if (config.joinCode.length < 8)
 	throw new Error("\"joinCode\" must have atleast 8 symbols.");
 if (!/^[a-zA-Z0-9]+$/.test(config.joinCode))

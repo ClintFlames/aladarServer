@@ -16,8 +16,8 @@ English guide is ([here](./Guide.md)).
 3. Нажмите на кнопку <image alt="Remix" src="./glitch_remix.png" align="center" height="40rem">
 4. Выберите файл `config.ts` и установите `joinCode` значение `"env"`, а `webSocketPort` значение `0`.
 5. Откройте файл `.env`.
-6. Запишите секректный код в поле для значения `CODE`.
-7. Нажмите на кнопку <image alt="Terminal" src="./glitch_terminal.png" align="center" height="40rem">
+6. Запишите секректный код в поле для значения `CODE` (код может содержать символы a-z A-Z 0-9, а также должен иметь длинну 8 или больше).
+7. Нажмите на кнопку <image alt="Terminal" src="./glitch_terminal.png" align="center" height="40rem"> (она на нижней панели).
 8. Напишите `refresh` и нажмите `Enter`.
 <br>
 <image src="./glitch_refresh.png" align="center" height="80rem">

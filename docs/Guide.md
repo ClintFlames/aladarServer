@@ -16,8 +16,8 @@ If you are looking for a guide on `aladar`, then it is [here] (https://github.co
 3. Click on the button <image alt="Remix" src="./glitch_remix.png" align="center" height="40rem">
 4. Select the `config.ts` file and set `joinCode` to `"env"` and `webSocketPort` to `0`.
 5. Open the `.env` file.
-6. Write the secret code in the field for the `CODE` value.
-7. Click on the button <image alt="Terminal" src="./glitch_terminal.png" align="center" height="40rem">
+6. Write the secret code in the field for the `CODE` value (the code may contain the characters a-z A-Z 0-9, and must also be 8 or more in length).
+7. Click on the button <image alt="Terminal" src="./glitch_terminal.png" align="center" height="40rem"> (it's on the bottom panel).
 8. Type `refresh` and press `Enter`.
 <br>
 <image src="./glitch_refresh.png" align="center" height="80rem">
